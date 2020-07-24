@@ -1,0 +1,20 @@
+{% if menu %}
+	<ul class="uk-navbar-nav uk-visible@m">
+	{% for item in menu %}
+		<li class="nav-item {{item.class}} {% if item.has_child_class %}dropdown{% endif %} {% if loop.last %}last{% endif %} {% if (item.current or item.current_item_ancestor) %}uk-active{% endif %}">
+			<a href="{% if item.has_child_class %}#{% else %}{{item.get_link}}{% endif %}">
+				{{item.title}}
+				{% if item.has_child_class %}<span class="caret"></span>{% endif %}
+			</a>
+			{% if item.has_child_class %}
+				{% include "partials/menu-dropdown.twig" with {'menu': item.children} %}
+			{% endif %}
+		</li>  
+	{% endfor %}
+	</ul>
+    <div class="contact  ml-auto">
+        {# <a class="contact-link">
+            <img src="{{ site.theme.uri }}/assets/dist/img/mail.svg" width="40px">
+        </a> #}
+    </div>
+{% endif %}

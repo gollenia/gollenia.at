@@ -1,0 +1,16 @@
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+	<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+		
+		<div class="uk-navbar-center">
+			{% include "partials/menu-desktop.twig" with {'menu': menu.get_items} %}
+			<ul class="uk-navbar-nav uk-hidden@m">
+				<li class="hamburger-menu">
+					<a class="hamburger hamburger--collapse" id="hamburger" type="button" uk-toggle="target: #mobile-menu; animation: uk-animation-slide-top">
+						<img data-src="{{ site.theme.uri }}/assets/dist/img/icons/menu.svg" class="hamburger-icon" uk-svg width="30" height="30px">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+</div>

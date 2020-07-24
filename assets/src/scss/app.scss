@@ -1,0 +1,16 @@
+@import "colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&family=Inria+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import "variables.scss";
+
+.de-AT {
+    --primary: var(--blue);
+    --primary-transparent: var(--blue-transparent);
+    --primary-light: var(--lightblue);
+}
+
+
+@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
