@@ -10,6 +10,63 @@
     --primary-light: var(--lightblue);
 }
 
+body {
+    background: #e1e1e1;
+}
+
+.uk-card-body {
+    background: #fff;
+}
+
+.uk-card {
+    display: block;
+    &:hover {
+        text-decoration: none;
+    }
+    box-shadow: {
+
+    }
+}
+
+.single {
+    header {
+        height: 50px;
+    }
+}
+
+.ctx-post-image {
+    
+    position: relative;
+    .title {
+        position: absolute;
+        top: 10px;
+        text-align: right;
+        right: -10px;
+        left: 50px;
+        h2 {
+            background: var(--blue-transparent);
+            padding: 2px 9px;
+            font-weight: bold;
+            display: inline-block;
+            color: #fff;
+            backdrop-filter: blur(5px);
+            
+        }
+        span {
+            background: rgba(255,255,255,.7);
+            color: #000;
+            backdrop-filter: blur(5px);
+        }
+    }
+}
+
+.latest-news {
+    margin-top: 100px;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
 
 @import "uikit/src/scss/mixins-theme.scss";
 @import "uikit/src/scss/uikit-theme.scss";
