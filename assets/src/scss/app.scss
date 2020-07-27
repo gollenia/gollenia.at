@@ -65,12 +65,16 @@ uk-button-blue {
 
     .uk-section-#{$color} {
         background-color: var(--#{$color});
-        
         color: var(--#{$color}-contrast);
     }
     .uk-button-#{$color}:hover {
         background-color: var(--#{$color}-darker);
         color: var(--#{$color}-contrast) !important;
+    }
+
+    .has-lightpurple-#{$color}-color {
+        background-color: var(--#{$color});
+        color: var(--#{$color}-contrast);
     }
 }
 
