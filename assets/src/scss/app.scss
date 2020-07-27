@@ -72,7 +72,7 @@ uk-button-blue {
         color: var(--#{$color}-contrast) !important;
     }
 
-    .has-lightpurple-#{$color}-color {
+    .has-#{$color}-background-color {
         background-color: var(--#{$color});
         color: var(--#{$color}-contrast);
     }
