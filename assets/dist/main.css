@@ -390,6 +390,9 @@ uk-button-blue {
     font-size: 1.5rem;
     color: var(--blue); }
 
+.ctx-post {
+  background-color: #fff; }
+
 .latest-news {
   margin-top: 100px; }
 
