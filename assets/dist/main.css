@@ -175,171 +175,192 @@ uk-button-blue {
 
 .uk-button-default {
   background-color: var(--default);
-  color: var(--default-contrast); }
+  color: var(--default-contrast);
+  color: var(--default-contrast) !important; }
 
 .uk-button-default:hover {
   background-color: var(--default-darker);
-  color: var(--default-contrast); }
+  color: var(--default-contrast) !important; }
 
 .uk-button-lightgrey {
   background-color: var(--lightgrey);
-  color: var(--lightgrey-contrast); }
+  color: var(--lightgrey-contrast);
+  color: var(--lightgrey-contrast) !important; }
 
 .uk-button-lightgrey:hover {
   background-color: var(--lightgrey-darker);
-  color: var(--lightgrey-contrast); }
+  color: var(--lightgrey-contrast) !important; }
 
 .uk-button-mediumgrey {
   background-color: var(--mediumgrey);
-  color: var(--mediumgrey-contrast); }
+  color: var(--mediumgrey-contrast);
+  color: var(--mediumgrey-contrast) !important; }
 
 .uk-button-mediumgrey:hover {
   background-color: var(--mediumgrey-darker);
-  color: var(--mediumgrey-contrast); }
+  color: var(--mediumgrey-contrast) !important; }
 
 .uk-button-darkgrey {
   background-color: var(--darkgrey);
-  color: var(--darkgrey-contrast); }
+  color: var(--darkgrey-contrast);
+  color: var(--darkgrey-contrast) !important; }
 
 .uk-button-darkgrey:hover {
   background-color: var(--darkgrey-darker);
-  color: var(--darkgrey-contrast); }
+  color: var(--darkgrey-contrast) !important; }
 
 .uk-button-white {
   background-color: var(--white);
-  color: var(--white-contrast); }
+  color: var(--white-contrast);
+  color: var(--white-contrast) !important; }
 
 .uk-button-white:hover {
   background-color: var(--white-darker);
-  color: var(--white-contrast); }
+  color: var(--white-contrast) !important; }
 
 .uk-button-blue {
   background-color: var(--blue);
-  color: var(--blue-contrast); }
+  color: var(--blue-contrast);
+  color: var(--blue-contrast) !important; }
 
 .uk-button-blue:hover {
   background-color: var(--blue-darker);
-  color: var(--blue-contrast); }
+  color: var(--blue-contrast) !important; }
 
 .uk-button-lightblue {
   background-color: var(--lightblue);
-  color: var(--lightblue-contrast); }
+  color: var(--lightblue-contrast);
+  color: var(--lightblue-contrast) !important; }
 
 .uk-button-lightblue:hover {
   background-color: var(--lightblue-darker);
-  color: var(--lightblue-contrast); }
+  color: var(--lightblue-contrast) !important; }
 
 .uk-button-darkblue {
   background-color: var(--darkblue);
-  color: var(--darkblue-contrast); }
+  color: var(--darkblue-contrast);
+  color: var(--darkblue-contrast) !important; }
 
 .uk-button-darkblue:hover {
   background-color: var(--darkblue-darker);
-  color: var(--darkblue-contrast); }
+  color: var(--darkblue-contrast) !important; }
 
 .uk-button-orange {
   background-color: var(--orange);
-  color: var(--orange-contrast); }
+  color: var(--orange-contrast);
+  color: var(--orange-contrast) !important; }
 
 .uk-button-orange:hover {
   background-color: var(--orange-darker);
-  color: var(--orange-contrast); }
+  color: var(--orange-contrast) !important; }
 
 .uk-button-lightorange {
   background-color: var(--lightorange);
-  color: var(--lightorange-contrast); }
+  color: var(--lightorange-contrast);
+  color: var(--lightorange-contrast) !important; }
 
 .uk-button-lightorange:hover {
   background-color: var(--lightorange-darker);
-  color: var(--lightorange-contrast); }
+  color: var(--lightorange-contrast) !important; }
 
 .uk-button-darkorange {
   background-color: var(--darkorange);
-  color: var(--darkorange-contrast); }
+  color: var(--darkorange-contrast);
+  color: var(--darkorange-contrast) !important; }
 
 .uk-button-darkorange:hover {
   background-color: var(--darkorange-darker);
-  color: var(--darkorange-contrast); }
+  color: var(--darkorange-contrast) !important; }
 
 .uk-button-green {
   background-color: var(--green);
-  color: var(--green-contrast); }
+  color: var(--green-contrast);
+  color: var(--green-contrast) !important; }
 
 .uk-button-green:hover {
   background-color: var(--green-darker);
-  color: var(--green-contrast); }
+  color: var(--green-contrast) !important; }
 
 .uk-button-lightgreen {
   background-color: var(--lightgreen);
-  color: var(--lightgreen-contrast); }
+  color: var(--lightgreen-contrast);
+  color: var(--lightgreen-contrast) !important; }
 
 .uk-button-lightgreen:hover {
   background-color: var(--lightgreen-darker);
-  color: var(--lightgreen-contrast); }
+  color: var(--lightgreen-contrast) !important; }
 
 .uk-button-darkgreen {
   background-color: var(--darkgreen);
-  color: var(--darkgreen-contrast); }
+  color: var(--darkgreen-contrast);
+  color: var(--darkgreen-contrast) !important; }
 
 .uk-button-darkgreen:hover {
   background-color: var(--darkgreen-darker);
-  color: var(--darkgreen-contrast); }
+  color: var(--darkgreen-contrast) !important; }
 
 .uk-button-purple {
   background-color: var(--purple);
-  color: var(--purple-contrast); }
+  color: var(--purple-contrast);
+  color: var(--purple-contrast) !important; }
 
 .uk-button-purple:hover {
   background-color: var(--purple-darker);
-  color: var(--purple-contrast); }
+  color: var(--purple-contrast) !important; }
 
 .uk-button-lightpurple {
   background-color: var(--lightpurple);
-  color: var(--lightpurple-contrast); }
+  color: var(--lightpurple-contrast);
+  color: var(--lightpurple-contrast) !important; }
 
 .uk-button-lightpurple:hover {
   background-color: var(--lightpurple-darker);
-  color: var(--lightpurple-contrast); }
+  color: var(--lightpurple-contrast) !important; }
 
 .uk-button-darkpurple {
   background-color: var(--darkpurple);
-  color: var(--darkpurple-contrast); }
+  color: var(--darkpurple-contrast);
+  color: var(--darkpurple-contrast) !important; }
 
 .uk-button-darkpurple:hover {
   background-color: var(--darkpurple-darker);
-  color: var(--darkpurple-contrast); }
+  color: var(--darkpurple-contrast) !important; }
 
 .uk-button-red {
   background-color: var(--red);
-  color: var(--red-contrast); }
+  color: var(--red-contrast);
+  color: var(--red-contrast) !important; }
 
 .uk-button-red:hover {
   background-color: var(--red-darker);
-  color: var(--red-contrast); }
+  color: var(--red-contrast) !important; }
 
 .uk-button-lightred {
   background-color: var(--lightred);
-  color: var(--lightred-contrast); }
+  color: var(--lightred-contrast);
+  color: var(--lightred-contrast) !important; }
 
 .uk-button-lightred:hover {
   background-color: var(--lightred-darker);
-  color: var(--lightred-contrast); }
+  color: var(--lightred-contrast) !important; }
 
 .uk-button-darkred {
   background-color: var(--darkred);
-  color: var(--darkred-contrast); }
+  color: var(--darkred-contrast);
+  color: var(--darkred-contrast) !important; }
 
 .uk-button-darkred:hover {
   background-color: var(--darkred-darker);
-  color: var(--darkred-contrast); }
+  color: var(--darkred-contrast) !important; }
 
 .uk-button-black {
   background-color: var(--black);
-  color: var(--black-contrast); }
+  color: var(--black-contrast);
+  color: var(--black-contrast) !important; }
 
 .uk-button-black:hover {
   background-color: var(--black-darker);
-  color: var(--black-contrast); }
+  color: var(--black-contrast) !important; }
 
 .ctx-post-image {
   position: relative; }
@@ -362,10 +383,12 @@ uk-button-blue {
       backdrop-filter: blur(5px); }
 
 .ctx-post-content {
+  padding: 30px;
   background-color: #fff;
-  color: #000 !important; }
+  color: #000; }
   .ctx-post-content h5 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: var(--blue); }
 
 .latest-news {
   margin-top: 100px; }

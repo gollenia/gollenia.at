@@ -60,10 +60,11 @@ uk-button-blue {
     .uk-button-#{$color} {
         background-color: var(--#{$color});
         color: var(--#{$color}-contrast);
+        color: var(--#{$color}-contrast) !important;
     }
     .uk-button-#{$color}:hover {
         background-color: var(--#{$color}-darker);
-        color: var(--#{$color}-contrast);
+        color: var(--#{$color}-contrast) !important;
     }
 }
 
@@ -94,10 +95,12 @@ uk-button-blue {
 }
 
 .ctx-post-content {
+    padding: 30px;
     background-color: #fff;
-    color: #000 !important;
+    color: #000;
     h5 {
         font-size: $global-large-font-size;
+        color: var(--blue);
     }
 }
 
