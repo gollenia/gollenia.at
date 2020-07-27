@@ -27,127 +27,148 @@ uk-button-blue {
   background-color: var(--default); }
 
 .uk-button-default {
-  background-color: var(--default); }
+  background-color: var(--default);
+  color: #fff; }
 
 .has-lightgrey-background {
   background-color: var(--lightgrey); }
 
 .uk-button-lightgrey {
-  background-color: var(--lightgrey); }
+  background-color: var(--lightgrey);
+  color: #fff; }
 
 .has-mediumgrey-background {
   background-color: var(--mediumgrey); }
 
 .uk-button-mediumgrey {
-  background-color: var(--mediumgrey); }
+  background-color: var(--mediumgrey);
+  color: #fff; }
 
 .has-darkgrey-background {
   background-color: var(--darkgrey); }
 
 .uk-button-darkgrey {
-  background-color: var(--darkgrey); }
+  background-color: var(--darkgrey);
+  color: #fff; }
 
 .has-white-background {
   background-color: var(--white); }
 
 .uk-button-white {
-  background-color: var(--white); }
+  background-color: var(--white);
+  color: #fff; }
 
 .has-blue-background {
   background-color: var(--blue); }
 
 .uk-button-blue {
-  background-color: var(--blue); }
+  background-color: var(--blue);
+  color: #fff; }
 
 .has-lightblue-background {
   background-color: var(--lightblue); }
 
 .uk-button-lightblue {
-  background-color: var(--lightblue); }
+  background-color: var(--lightblue);
+  color: #fff; }
 
 .has-darkblue-background {
   background-color: var(--darkblue); }
 
 .uk-button-darkblue {
-  background-color: var(--darkblue); }
+  background-color: var(--darkblue);
+  color: #fff; }
 
 .has-orange-background {
   background-color: var(--orange); }
 
 .uk-button-orange {
-  background-color: var(--orange); }
+  background-color: var(--orange);
+  color: #fff; }
 
 .has-lightorange-background {
   background-color: var(--lightorange); }
 
 .uk-button-lightorange {
-  background-color: var(--lightorange); }
+  background-color: var(--lightorange);
+  color: #fff; }
 
 .has-darkorange-background {
   background-color: var(--darkorange); }
 
 .uk-button-darkorange {
-  background-color: var(--darkorange); }
+  background-color: var(--darkorange);
+  color: #fff; }
 
 .has-green-background {
   background-color: var(--green); }
 
 .uk-button-green {
-  background-color: var(--green); }
+  background-color: var(--green);
+  color: #fff; }
 
 .has-lightgreen-background {
   background-color: var(--lightgreen); }
 
 .uk-button-lightgreen {
-  background-color: var(--lightgreen); }
+  background-color: var(--lightgreen);
+  color: #fff; }
 
 .has-darkgreen-background {
   background-color: var(--darkgreen); }
 
 .uk-button-darkgreen {
-  background-color: var(--darkgreen); }
+  background-color: var(--darkgreen);
+  color: #fff; }
 
 .has-purple-background {
   background-color: var(--purple); }
 
 .uk-button-purple {
-  background-color: var(--purple); }
+  background-color: var(--purple);
+  color: #fff; }
 
 .has-lightpurple-background {
   background-color: var(--lightpurple); }
 
 .uk-button-lightpurple {
-  background-color: var(--lightpurple); }
+  background-color: var(--lightpurple);
+  color: #fff; }
 
 .has-darkpurple-background {
   background-color: var(--darkpurple); }
 
 .uk-button-darkpurple {
-  background-color: var(--darkpurple); }
+  background-color: var(--darkpurple);
+  color: #fff; }
 
 .has-red-background {
   background-color: var(--red); }
 
 .uk-button-red {
-  background-color: var(--red); }
+  background-color: var(--red);
+  color: #fff; }
 
 .has-lightred-background {
   background-color: var(--lightred); }
 
 .uk-button-lightred {
-  background-color: var(--lightred); }
+  background-color: var(--lightred);
+  color: #fff; }
 
 .has-darkred-background {
   background-color: var(--darkred); }
 
 .uk-button-darkred {
-  background-color: var(--darkred); }
+  background-color: var(--darkred);
+  color: #fff; }
 
 .has-black-background {
   background-color: var(--black); }
 
 .uk-button-black {
-  background-color: var(--black); }
+  background-color: var(--black);
+  color: #fff; }
 
 .uk-button-large {
   font-size: 1.25rem; }
@@ -339,6 +360,12 @@ uk-button-blue {
       background: rgba(255, 255, 255, 0.7);
       color: #000;
       backdrop-filter: blur(5px); }
+
+.ctx-post-content {
+  background-color: #fff;
+  color: #000 !important; }
+  .ctx-post-content h5 {
+    font-size: 1.5rem; }
 
 .latest-news {
   margin-top: 100px; }

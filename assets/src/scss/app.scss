@@ -46,6 +46,7 @@ uk-button-blue {
     }
     .uk-button-#{$color} {
         background-color: var(--#{$color});
+        color: #fff;
     }
 }
 
@@ -89,6 +90,14 @@ uk-button-blue {
             color: #000;
             backdrop-filter: blur(5px);
         }
+    }
+}
+
+.ctx-post-content {
+    background-color: #fff;
+    color: #000 !important;
+    h5 {
+        font-size: $global-large-font-size;
     }
 }
 
