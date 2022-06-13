@@ -1,0 +1,15 @@
+.breadcrumbs {
+    display: none;
+}
+
+@include media-breakpoint(md) {
+	.breadcrumbs {
+		margin-right: space(8);
+	}
+}
+
+@include media-breakpoint(lg) {
+	.breadcrumbs {
+		margin-right: space(12);
+	}
+}

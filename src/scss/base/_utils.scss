@@ -1,0 +1,156 @@
+.flex {
+    display: flex;
+	&--1 {
+		flex: 1;
+	}
+	&--center {
+		display: flex;
+		align-items: center;
+	}
+	&--row {
+		flex-direction: row;
+	}
+	&--column {
+		flex-direction: column;
+	}
+
+}
+
+
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (screen(md)) {
+    .md\:show {
+        display: inherit;
+    }
+    .md\:hidden {
+        display: none;
+    }
+}
+
+@media (screen(lg)) {
+    .lg\:show {
+        display: inherit;
+    }
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (screen(lg)) {
+    .xl\:show {
+        display: inherit;
+    }
+    .xl\:hidden {
+        display: none;
+    }
+	.xl\:flex {
+		display: flex;
+		&--1 {
+			flex: 1;
+		}
+		&--center {
+			display: flex;
+			align-items: center;
+		}
+		&--row {
+			flex-direction: row;
+		}
+		&--column {
+			flex-direction: column;
+		}
+	
+	}
+}
+
+
+
+$utilities: () !default;
+
+
+
+@each $key, $value in $spacers {
+
+	.mx-#{$key} {
+		margin-left: $value;
+		margin-right: $value;
+	};
+	.my-#{$key} {
+		margin-top: $value;
+		margin-bottom: $value;
+	};
+	.mb-#{$key} {
+		margin-bottom: $value;
+	};
+	.mt-#{$key} {
+		margin-top: $value;
+	};
+	.ml-#{$key} {
+		margin-left: $value;
+	};
+	.mr-#{$key} {
+		margin-right: $value;
+	};
+	.px-#{$key} {
+		padding-left: $value;
+		padding-right: $value;
+	};
+	.py-#{$key} {
+		padding-top: $value;
+		padding-bottom: $value;
+	};
+	.p-#{$key} {
+		padding: $value;
+	};
+	.m-#{$key} {
+		margin: $value;
+	};
+	.w-#{$key} {
+		width: $value;
+		height: $value;
+	};
+	.h-#{$key} {
+		height: $value;
+	};    
+}
+
+
+.margin--0 {
+	margin: 0;
+}
+
+.margin--1 {
+	margin: 1rem;
+}
+
+.padding--0 {
+	padding: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.mt-auto {
+	margin-top: auto;
+}

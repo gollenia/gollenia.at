@@ -1,0 +1,51 @@
+
+.number-picker {
+   padding: 0.25rem;
+   border-radius: 999px;
+   display: inline-flex;
+   align-items: center;
+   background: gray(300);
+
+   button {
+		@extend .button--pop;
+		border-radius: 999px;
+		background: var(--primary);
+		color: var(--primary-contrast);
+		cursor: pointer;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 1.75rem;
+		height:1.75rem;
+		display: grid;
+		place-items: center;
+		padding: 0;
+		font-weight: bold;
+      	&:disabled {
+			background-color: gray(400);
+			color: $black;
+      	}
+		@media (min-width: 1024px) {
+			width: 1.75rem;
+			height: 1.75rem;
+		}
+
+		&:first-child::before {
+			content: "remove";
+			font-family: "material-icons"
+		}
+		&:last-child::before {
+			content: "add";
+			font-family: "material-icons"
+		}
+
+   } 
+
+   input {
+      padding: 0 0.25rem;
+      width: 2rem;
+      margin: 0 0.25rem;
+      text-align: center;
+      background: transparent;
+	  font-weight: 600;
+   }
+}

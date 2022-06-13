@@ -1,0 +1,31 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function themecolor($color) {
+    $colorvar: map-deep-get($themecolors, $color, 'color');
+    @return $colorvar;
+}
+
+@function gray($shade) {
+    $colorvar: map-deep-get($graytones, $shade, 'color');
+    @return $colorvar;
+}
+
+@function space($space) {
+    @return $space / 4 * $spacer;
+}
+
+@function radius($size, $corner: '') {
+    @if $corner != '' {
+        @return map-get($border-multiplier, $corner) * map-get($border-base, $size);
+    }
+    @return map-get($border-base, $size);
+}
+
+@function screen($media) {
+    @return 'min-width:' + map-get($screens, $media);
+}

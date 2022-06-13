@@ -1,0 +1,61 @@
+
+@each $key, $color in $themecolors {
+    .bg-#{$key}, has-#{$key}-background  {
+        background-color: map-get($color, color);
+        color: map-get($color, contrast);
+    };
+    .bg-#{$key}-light {
+        background-color: map-get($color, light);
+        color: map-get($color, dark);
+    };
+    .bg-#{$key}-dark {
+        background-color: map-get($color, dark);
+        color: map-get($color, light);
+    };
+    .text-#{$key}, has-#{$key}-color {
+        color: map-get($color, color);
+    };
+}
+
+.fill-primary {
+    fill: var(--primary-page)
+}
+
+
+.fill-secondary {
+    fill: themecolor(secondary )
+}
+
+.bg-white {
+    background: $white;
+    color: $black;
+}
+
+.bg-black {
+    background: $black;
+    color: $white;
+}
+
+.bg-default {
+	background: var(--gray-100);
+}
+
+
+@each $key, $color in $graytones {
+    .bg-gray-#{$key} {
+        background-color: map-get($color, color);
+        color: map-get($color, contrast);
+    };
+    .text-gray-#{$key} {
+        color: map-get($color, color);
+    }
+}
+
+.light {
+    color: $black;
+}
+
+.dark {
+    color: $white;
+}
+

@@ -1,0 +1,44 @@
+.pills {
+	display: flex;
+	gap: 1rem;
+
+	
+
+	&__item {
+		font-weight: bold;
+		position: relative;
+		font-weight: 700;
+		position: relative;
+		background: var(--gray-200);
+		color: var(--gray-600);
+		padding: 0px space(2);
+		@include rounded(md);
+
+		&--small {
+			@include rounded(sm);
+		}
+
+		&--warning {
+			background: var(--warning-light);
+			color: var(--warning);
+		}
+
+		&--success {
+			background: var(--success-light);
+			color: var(--success);
+		}
+
+		&--error {
+			background: var(--error-light);
+			color: var(--error);
+		}
+	}
+
+	&--small {
+		.pills__item {
+			@include rounded(sm);
+		}
+	}
+}
+
+

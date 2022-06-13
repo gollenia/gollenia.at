@@ -1,0 +1,12 @@
+.tabs {
+    display: flex;
+    padding-top: space(12);
+
+    &__item {
+        @include rounded('sm');
+        overflow: hidden;
+        padding: 0.25rem 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+}

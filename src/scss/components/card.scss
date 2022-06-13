@@ -1,0 +1,324 @@
+/*
+*
+*   Card component
+*
+*/
+
+.card { 
+    display: flex;
+    position: relative;
+	border-radius: 1rem;
+    div.mt-auto.wp-block-spacer {
+        height: 0px !important;
+    }
+
+    /****************************************
+    *   Modifiers
+    ****************************************/
+
+    &--shadow {
+        
+    }
+
+    &--hover {
+        transition: all 300ms;
+        &:hover .card__image > img, &:focus .card__image > img {
+            transform: scale(1.1);
+        }
+        &.card--shadow:hover {
+            //box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        &.card--rotate:hover {
+            //transform: rotate(3deg);
+        }
+    }
+
+    &__image img {
+        transform: scale(1);
+        transition: all 300ms ease-in-out;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+    }
+
+    &--image-top {
+        flex-direction: column;
+        .card__image, .card__image {
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+        .card__badge {
+            right: space(4);
+            top: space(4);
+        }
+        .card__label {
+			top: 0;
+			border-radius: 999px;;
+			margin-left: -0.5rem;
+			transform: translate(0,-50%);
+        }
+    }
+
+	&--white, &.bg-white {
+		background-color: var(--gray-100);
+		color: var(--black);
+	}
+
+	
+
+    &--image-right {
+        flex-direction: row-reverse;
+        .card__badge {
+            right: space(4);
+            top: space(4);
+        }
+        .card__image, .card__image {
+            
+            align-self: stretch;
+            aspect-ratio: 1/1;
+            height: 100%;
+            width: 33%;
+        }
+        .card__label {
+            left: 0;
+            margin-left: space(4);
+        }
+    }
+
+    &--image-bottom {
+        flex-direction: column-reverse;
+        .card__image, .card__image {
+            
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+        .card__badge {
+            right: space(4);
+            bottom: space(4);
+        }
+    }
+
+    &--image-left {
+        flex-direction: row;
+        .card__badge {
+            left: space(4);
+            top: space(4);
+        }
+        .card__image {
+            flex: 1 1 0;
+        }
+		.card__content {
+			flex: 2 1 0;
+		}
+        .card__label {
+            right: 1rem;
+            top: 0;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &--no-image {
+        flex-direction: column;
+        .card__label { right: space(4); left: auto; }
+        .card__badge {
+            margin-top: space(-4);
+            margin-left: space(-4);
+        }
+    }
+
+    
+    &--primary {
+        .card__badge, .card__label {
+            background-color: var(--primary-page);
+            color: var(--primary-page-contrast);
+        }
+    }
+
+	&__image-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgba(255,255,255,0.7);
+		padding: 1rem 1.5rem;
+		
+		backdrop-filter: blur(5px);
+		max-width: 80%;
+
+		.card__subtitle {
+			color: var(--gray-800);
+		}
+	}
+
+    /****************************************
+    *   Elements
+    ****************************************/
+
+    &__content  { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: space(4) space(6); 
+		flex-grow: 1;
+
+        label.card__label {
+            margin-top: space(-7); 
+            margin-left: space(-2);
+            left: space(4);
+        }
+    }
+
+	// .card-header is legacy
+    &__title, h2, .card-header {
+        font-weight: 500;
+        font-size: space(6);
+		margin: 0;
+    }
+
+	&card__title--small {
+		font-size: space(4);
+		font-weight: 600;
+	}
+
+    &__subtitle {
+        font-size: space(3);
+        color: gray(500);
+        display: inline-block; 
+        margin: 0;
+		@extend .h4;
+		&.text--primary { color: var(--primary-page)}
+    }
+
+	&__titel {
+		@extend .h2;
+	}
+
+	// card-text is legacy
+    h2, h3, h4, h5, &__text, p, &__title {
+     
+		color: var(--black);
+    }
+
+	&.dark {
+		h2, h3, h4, h5, .card__text, p, .card__title {
+			color: var(--white);
+		}
+	}
+
+	&__text, .description {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	// Legacy
+    &__footer {
+        margin-top: auto;
+        padding-top: space(2);
+        display: flex;
+		align-items: center;
+		&--dotted {
+			border-top: 1px dotted gray(200);
+		}
+    }
+
+	hr {
+		margin-top: auto;
+		padding: 0.5rem 0rem 0;
+		width: auto!important;
+		margin-left: -1.25rem;
+		margin-right: -1.25rem;
+	}
+
+    &__actions {
+        justify-self: flex-start;
+        margin-left: -1rem;
+    }
+
+	&__hidden-link {
+		position: static;
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			pointer-events: visibleFill;
+		}
+	}
+
+    &__supplemental {
+        justify-self: flex-end;
+        margin-left: auto;
+    }
+
+    &__badge {
+        aspect-ratio: 1/1;
+        border-radius: 9999px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        padding: 0 space(2);
+        &__day {
+            font-size: 1rem;
+            line-height: 0.7rem;
+            font-weight: 600;
+        }
+        &__month {
+            line-height: .8rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    }
+
+    &__svg {
+        padding: space(4);
+        display: grid;
+        place-items: center;
+    }
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__label {
+        position: absolute;
+        padding-left: space(2);
+        padding-right: space(2);
+    }
+
+	&__image-label {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #fff;
+		border-radius: 999px;
+		padding-right: 1rem;
+		right: 1rem;
+		top: 1rem;
+		color: var(--black);
+		margin-top: 0 !important;
+		padding-left: 0 !important;
+		img {
+			width: 2.5rem;
+			border-radius: 999px;
+		}
+	}
+
+	
+	
+
+	&--center {
+		text-align: center;
+		align-items: center;
+	}
+
+
+}

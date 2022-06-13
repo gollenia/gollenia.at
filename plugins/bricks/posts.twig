@@ -1,0 +1,75 @@
+{#
+# Posts Block template	 
+#
+# Attributes
+#
+# integer	columnsSmall
+# integer	columnsMedium
+# integer	columnsLarge
+# bool		showImages
+# bool		roundImages
+# bool		dropShadow
+# bool		hover
+# integer	imageSize
+# boolean	showDate
+# boolean	showCategory
+# boolean	showTag
+# string	style			[list, cards]
+# integer	limit
+# string	order
+# string	orderby			[date, title, id]
+# string	textAlignment	[left, right, center]
+# string	category
+# integer	excerptLength
+#
+# Objects
+#
+# Timber\Post	posts
+#
+#}
+
+<div class="grid md:grid--columns-2 xl:grid--columns-3 grid--gap-12">
+    {% for item in posts %}
+            <div 
+                class="card bg-white
+                {% if hover %}card--hover {% endif %}
+                {% if dropShadow %}card--shadow {% endif %}
+                {{ style == "list" ? "card--image-left" : "card--image-top" }}
+                {{loop.first ? "card--first"}}
+                {{loop.last ? "card--last"}}
+                "            
+            >
+            {% if showImages %}
+
+            
+          
+            {% set color = get_color_by_slug(item.meta.page_colors.primary_color) %}
+            {% set textColor = (color.brightness == 'dark' ? 'var(--white)' : 'var(--black)') %}
+                <a href="{{ function("get_permalink", item.ID) }}" class="card__image">
+                    <img src="{{ item.thumbnail.src('large') }}" />
+                </a>
+                {% if showDate and style == "cards" %}
+                    <b class="card__badge {% if color is empty %}bg-primary text-primary-contrast{% endif %} card-badge" style="{% if color is not empty %}color: {{textColor}}; background: {{color.color}}{% endif %}">
+                        <div class="card__badge__day">{{item.post_date|date("j")}}</div>
+                        <div class="card__badge__month">{{item.post_date|date("M")}}</div>
+                    </b>
+                {% endif %}
+            {% endif %}
+            
+                <div class="card__content">
+                    <span class="card__label {% if color is empty %}bg-primary text-primary-contrast{% endif %}" style="{% if color is not empty %}color: {{textColor}}; background: {{color.color}}{% endif %}">
+                        {{item.category}}
+                    </span>
+                    <a href="{{ function("get_permalink", item.ID) }}" class="card__title {% if color is empty %}text-primary{% endif %}" style="{% if color is not empty %}color: {{color.color}};{% endif %}">{{item.post_title}}</a>
+                    <span class="card__subtitle"><span class="text-">{% if showDescription %}{{item.tags|first}}{% endif %} {{ showDate and showDescription ? "|" }} {% if showDate %}{{item.post_date|date("j. M. Y")}}{% endif %}</span></span>
+                    {% if excerptLength %}
+                    <p class="card__text">
+                        {{item.post_excerpt|excerpt(excerptLength)}}
+                    </p>
+					{% endif %}
+				
+                </div>
+            </div>
+        
+    {% endfor %}
+</div>

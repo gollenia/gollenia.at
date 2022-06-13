@@ -1,0 +1,159 @@
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    4: $spacer,
+    5: $spacer * 1.25,
+    6: $spacer * 1.5,
+    8: $spacer * 2,
+    12: $spacer * 3,
+    16: $spacer * 4,
+    32: $spacer * 8,
+    64: $spacer * 16,
+);
+
+$screens: (
+    '': 0,
+    'sm': 640px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1280px,
+    'xxl': 1536px
+);
+
+$content-width: map-get($screens, 'lg');
+
+$themecolors: (
+    primary: (
+        'color': var(--primary),
+        'contrast': var(--primary-contrast),
+        'light': var(--primary-light),
+        'dark': var(--primary-dark)
+    ),
+    secondary: (
+        'color': var(--secondary),
+        'contrast': var(--secondary-contrast),
+        'light': var(--secondary-light),
+        'dark': var(--secondary-dark)
+    ),
+    success: (
+        'color': var(--success),
+        'contrast': var(--success-contrast),
+        'light': var(--success-light),
+        'dark': var(--success-dark)
+    ),
+    warning: (
+        'color': var(--warning),
+        'contrast': var(--warning-contrast),
+        'light': var(--warning-light),
+        'dark': var(--warning-dark)
+    ),
+    error: (
+        'color': var(--error),
+        'contrast': var(--error-contrast),
+        'light': var(--error-light),
+        'dark': var(--error-dark)
+    ),
+    gray: (
+        'color': var(--gray-600),
+        'contrast': var(--white),
+        'light': var(--gray-300),
+        'dark': var(--gray-800)
+    ),
+    white: (
+        'color': var(--white),
+        'contrast': var(--black),
+        'light': var(--white),
+        'dark': var(--white)
+    ),
+    black: (
+        'color': var(--black),
+        'contrast': var(--white),
+        'light': var(--black),
+        'dark': var(--black)
+    )
+);
+
+$black: var(--black);
+$white: var(--white);
+
+
+
+/*
+/   Border Radius base multiplier
+*/
+$border-base: (
+    'sm': $spacer * 0.5,
+    'md': $spacer *.75,
+    'lg': $spacer * 2,
+    'xl': $spacer * 4,
+);
+
+/*
+/   Border Radius multiplier for each corner
+*/
+$border-multiplier: (
+    'tl': 1,
+    'tr': 0,
+    'bl': 0,
+    'br': 1,
+);
+
+
+$text-base: 1rem !default; 
+$line-height-factor: 1.5;
+$font-family: "Exo 2", sans-serif;
+
+$headings: (
+    h1: 2.5,
+    h2: 2,
+    h3: 1.75,
+    h4: 1.5,
+    h5: 1.25,
+    h6: 1
+);
+
+$text-xs:                $text-base * .75 !default;
+$text-sm:                $text-base * .875 !default;
+$text-lg:                $text-base * 1.25 !default;
+
+
+$graytones: (
+    100: (
+        'color': var(--gray-100),
+        'contrast': var(--gray-100-contrast)
+    ),
+    200: (
+        'color': var(--gray-200),
+        'contrast': var(--gray-200-contrast),
+    ),
+    300: (
+        'color': var(--gray-300),
+        'contrast': var(--gray-300-contrast),
+    ),
+    400: (
+        'color': var(--gray-400),
+        'contrast': var(--gray-400-contrast),
+    ),
+    500: (
+        'color': var(--gray-500),
+        'contrast': var(--gray-500-contrast),
+    ),
+    600: (
+        'color': var(--gray-600),
+        'contrast': var(--gray-600-contrast),
+    ),
+    700: (
+        'color': var(--gray-700),
+        'contrast': var(--gray-700-contrast),
+    ),
+    800: (
+        'color': var(--gray-800),
+        'contrast': var(--gray-800-contrast),
+    ),
+    900: (
+        'color': var(--gray-900),
+        'contrast': var(--gray-900-contrast),
+    )
+);

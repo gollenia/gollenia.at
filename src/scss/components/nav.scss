@@ -1,0 +1,29 @@
+
+
+.nav {
+
+    &__link {
+        display: flex;
+        align-items: center;
+        &:hover {
+            transform: scale(1.05);
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    &__title {
+        padding: space(1) space(2);
+    }
+
+    &__icon {
+        color: rgba(0,0,0,0.4);
+    }
+
+    @at-root .dark &__icon {
+        color: rgba(255,255,255,0.4);
+    }
+
+    @at-root .dark &__link {
+        color: $white;
+    }
+}

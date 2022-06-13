@@ -1,0 +1,29 @@
+
+
+.max-w-screen-xl,
+.container, .content {
+    max-width: map-get($screens, 'xxl');
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+@include media-breakpoint(md) {
+	.container, .content {
+		max-width: map-get($screens, 'xxl');
+		padding: 0 2rem;
+		margin: 0 auto;
+	}
+}
+
+@include media-breakpoint(lg) {
+	.container, .content {
+		max-width: map-get($screens, 'xxl');
+		padding: 0 3rem;
+		margin: 0 auto;
+	}
+}
+
+article {
+	padding: 3rem 1rem;
+	background: white;
+}

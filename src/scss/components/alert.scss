@@ -1,0 +1,54 @@
+.alert {
+    margin: 2rem 0rem;
+    padding: 2rem;
+    display: relative;
+    transition: all 300ms ease-in-out;
+	@include rounded('lg');
+    
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        margin: 1rem 0 0 0;
+    }
+
+    &__close:before, .close:after {
+        position: absolute;
+        top: 0;
+        width: 1rem;
+    }
+
+    &__close { position: relative; }
+    &__close:before { transform: rotate(-45deg); }
+    &__close:after { transform: rotate(45deg); }
+
+    &--hidden {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    &--disabled {
+        max-height: 0 !important;
+    }
+    
+	&--warning {
+		background-color: var(--warning-light);
+		color: var(--warning-light-contrast)
+	}
+
+	&--info {
+		background-color: var(--info);
+		color: var(--info-contrast)
+	}
+
+	&--error {
+		background-color: var(--error-light);
+		color: var(--error-light-contrast)
+	}
+
+	&--success {
+		background-color: var(--success-light);
+		color: var(--success-light-contrast);
+	}
+}

@@ -1,0 +1,18 @@
+@function breakpoint-min($name, $breakpoints: $screens) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+
+/*
+/ We go mobilile first, so no need of ups and downs.
+*/
+@mixin media-breakpoint($name, $breakpoints: $screens) {
+    $min: breakpoint-min($name, $breakpoints);
+    @if $min {
+      @media (min-width: $min) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }

@@ -1,0 +1,135 @@
+@each $key, $value in $headings {
+    .#{$key}, #{$key} {
+        font-size: $text-base * $value;
+        //line-height: $line-height-factor * $text-base * $value;
+    }
+}
+
+body {
+    font-family: "Inria Sans",sans-serif;
+}
+
+
+.text-xs {
+    font-size: $spacer * 0.75 !important;
+    line-height: $spacer !important;
+}
+
+p.core-block:empty {
+    display: none;
+}
+
+ol.core-block {
+    list-style-type: decimal;
+	counter-reset: list 0;
+    padding: map-get($spacers,2) 0 map-get($spacers,2) map-get($spacers,8);
+
+	li {
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+
+	li::before {
+		counter-increment: list;
+  		content: counter(list);
+		background: rgba(0,0,0,0.2);
+		border-radius: 999px;
+		width: 1.5rem;
+		height: 1.5rem;
+		text-align: center;
+		margin-right: 0.5rem;
+		display: inline-block;
+	}
+}
+
+
+
+hr {
+    border: 0;
+    border-bottom-style: dotted !important;
+    border-bottom-width: 4px !important;;
+    border-color: rgba(0,0,0,0.3);
+    margin: 1rem 0;
+
+	&.wp-block-separator {
+		width: 100%;
+	}
+}
+
+.dark hr {
+    border-color: rgba(255,255,255,0.3);
+}
+
+ul.core-block {
+    padding-left: 0px !important
+}
+
+ul.core-block li {
+    list-style-type: none;
+    margin-left: 2rem;
+    align-content: center;
+    padding: 0.25rem 0.5rem
+}
+
+ul.core-block li:before {
+    content: "label";
+    display: inline-block;
+    font-family: 'material-icons';
+    margin-left: -2rem;
+    margin-right: 0.5rem;
+    font-size: 24px;
+    color: rgba(0,0,0,0.4);
+    line-height: 1;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	white-space: nowrap;
+	font-style: normal;
+	word-wrap: normal;
+	direction: ltr;
+}
+
+.dark ul.core-block li:before {
+    color: rgba(255,255,255,0.4);
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text--primary {
+    color: var(--primary-page);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.text--secondary {
+	color: var(--secondary-page);
+}
+
+.text--error {
+	color: var(--error);
+}
+
+.text--warning {
+	color: var(--warning);
+}

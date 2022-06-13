@@ -1,0 +1,40 @@
+.wp-block-quote {
+    border-style: dotted !important;
+    border-left-width: 4px !important;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    margin-top: 1.75rem !important;
+    margin-bottom: 1.75rem !important;
+    border-color: var(--primary-page) !important;
+	border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+
+    cite {
+        color: gray(700);
+        font-style: italic !important;
+    }
+}
+
+.dark .wp-block-quote {
+    border-color: var(--primary-page-light) !important;
+    cite {
+        color: gray(300);
+    }
+}
+
+.section--primary .wp-block-quote {
+    color: var(--primary-page-contrast);
+    border-color: var(--primary-page-contrast) !important;
+}
+
+.wp-block-pullquote {
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    margin-bottom: 1.75em;
+    color: currentColor;
+    border-style: dotted;
+    border-left: 0;
+    border-right: 0;
+}
